@@ -36,20 +36,20 @@ fun main() {
     listConteudos.add(cursoWeb)
     listConteudos.add(cursoIos)
     
-    val formacaoAndroid = Formacao("Formação Completa", listConteudos, Nivel.Avançado)
+    val formacaoCompleta = Formacao("Formação Completa", listConteudos, Nivel.Avançado)
     
     val Joao = Usuario("João", "joao@mail.com", "premium")
     val Maria = Usuario("Maria", "maria@mail.com", "premium")
     val Clovis = Usuario("Clovis", "clovis@mail.com", "free")
     
-    formacaoAndroid.matricular(Joao)
-    formacaoAndroid.matricular(Maria)
+    formacaoCompleta.matricular(Joao)
+    formacaoCompleta.matricular(Maria)
     
     print("Formação: ")
-    println("${formacaoAndroid.nome} - ${formacaoAndroid.nivel}")
+    println("${formacaoCompleta.nome} - ${formacaoCompleta.nivel}")
     println("Syllabus: ")
-    println(formacaoAndroid.imprimirGradeFormacao())
+    println(formacaoCompleta.imprimirGradeFormacao())
     println()
     println("Lista de inscritos aceitos: ")
-    println(formacaoAndroid.imprimirListaInscritos())
+    println(formacaoCompleta.imprimirListaInscritos())
 }
